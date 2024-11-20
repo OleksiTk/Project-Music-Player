@@ -8,6 +8,16 @@
       href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="img/logoc_Elipse.png"
+      sizes="30x56"
+      type="image/png"
+    />
+    <script
+      src="https://kit.fontawesome.com/89563beb0a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Music Player</title>
   </head>
   <body>
@@ -15,7 +25,10 @@
       <div class="wrapper">
         <div class="search__container">
           <div class="search__body">
-            <div class="search__body--text">SoundClad</div>
+            <div class="search__body--text">
+              SoundClad
+              <img src="img/logos.png" width="60" height="40" alt="" />
+            </div>
             <div class="search__body--input">
               <input
                 class="search__body--input--place"
@@ -45,18 +58,24 @@
               <p class="music--player--author">Nirvana</p>
             </div>
             <div class="music--player--buttons">
-              <audio controls>
+              <audio class="controls">
                 <source
+                  class="controls--music"
                   src="music/Playboi Carti - Glock (AMV).mp3"
                   type="audio/mp3"
                 />
-                Ваш браузер не підтримує елемент audio.
+                type="audio/mp3" /> type="audio/mp3" /> Ваш браузер не підтримує
+                елемент audio
               </audio>
               <input class="music--player--progres" type="range" value="0" />
+              <div class="music--player--forward">
+                <i class="fa-solid fa-play"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

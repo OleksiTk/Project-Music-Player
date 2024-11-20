@@ -69,7 +69,7 @@ button {
 }
 .search__body {
   padding: 50px 70px;
-  display: none;
+  display: flex;
   border-radius: 10px;
   flex-direction: column;
   justify-content: space-around;
@@ -135,7 +135,7 @@ button {
 .music--player__body {
   height: 600px;
   width: 450px;
-  display: flex;
+  display: none;
   border-radius: 10px;
   flex-direction: column;
   background: rgba(242, 177, 12, 1);
@@ -210,8 +210,11 @@ button {
   font-size: 20px;
   color: aliceblue;
 }
+.controls {
+  display: block;
+}
 .music--player--buttons {
-  padding-top: 30px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,3 +243,58 @@ button {
 }
 
 /* Стилізація для доріжки слайдера (необов'язково) */
+
+.music--player--forward {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.fa-solid {
+}
+.fa-backward {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+
+  border-radius: 30px;
+  color: orange;
+  font-size: 30px;
+  cursor: pointer;
+}
+#back {
+  padding: 10px 12px;
+}
+.fa-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: aliceblue;
+  padding: 20px 25px;
+  border-radius: 40px;
+  color: orange;
+  font-size: 40px;
+}
+.fa-forward {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: aliceblue;
+  padding: 10px 12px;
+  border-radius: 30px;
+  color: orange;
+  font-size: 30px;
+}
+.fa-pause {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: aliceblue;
+  padding: 20px 32px;
+  border-radius: 40px;
+  color: orange;
+  font-size: 40px;
+}
