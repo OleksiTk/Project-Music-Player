@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="search__container">
+          <div class="search__body">
+            <div class="search__body--text">SoundClad</div>
+            <div class="search__body--input">
+              <input
+                class="search__body--input--place"
+                type="text"
+                placeholder="Serach your music"
+              />
+            </div>
+            <div class="search__body--button">
+              <button class="search--button">Search music</button>
+            </div>
+          </div>
+        </div>
+        <div class="music--player__container">
+          <div class="music--player__body">
+            <div class="music--player--back--button">
+              <a href="" class="music--player__back"><</a>
+            </div>
+            <div class="music--player--viewer">
+              <img
+                class="music--player--img"
+                width="150"
+                height="150"
+                src="img/1200x1200bf-60.jpg"
+                alt=""
+              />
+              <p class="music--player--name">Nevermind</p>
+              <p class="music--player--author">Nirvana</p>
+            </div>
+            <div class="music--player--buttons">
+              <audio controls>
+                <source
+                  src="music/Playboi Carti - Glock (AMV).mp3"
+                  type="audio/mp3"
+                />
+                Ваш браузер не підтримує елемент audio.
+              </audio>
+              <input class="music--player--progres" type="range" value="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

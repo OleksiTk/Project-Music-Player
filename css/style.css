@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  font-family: Roboto;
+  background-color: rgb(63, 63, 63);
+  height: 100%;
+  line-height: 1;
+}
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+/*--------------------------------------------------------*/
+.wrapper {
+  padding-top: 200px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------*/
+
+.search__container {
+}
+.search__body {
+  padding: 50px 70px;
+  display: none;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(229, 243, 12, 1);
+  background: -o-linear-gradient(
+    -225deg,
+    rgba(229, 243, 12, 1) 0%,
+    rgba(243, 61, 12, 1) 63%,
+    rgba(243, 61, 12, 1) 74.5%,
+    rgba(243, 61, 12, 1) 74.75%
+  );
+  background: -moz-linear-gradient(
+    -225deg,
+    rgba(229, 243, 12, 1) 0%,
+    rgba(243, 61, 12, 1) 63%,
+    rgba(243, 61, 12, 1) 74.5%,
+    rgba(243, 61, 12, 1) 74.75%
+  );
+  background: -webkit-linear-gradient(
+    -225deg,
+    rgba(229, 243, 12, 1) 0%,
+    rgba(243, 61, 12, 1) 63%,
+    rgba(243, 61, 12, 1) 74.5%,
+    rgba(243, 61, 12, 1) 74.75%
+  );
+  background: linear-gradient(
+    -45deg,
+    rgba(229, 243, 12, 1) 0%,
+    rgba(243, 61, 12, 1) 63%,
+    rgba(243, 61, 12, 1) 74.5%,
+    rgba(243, 61, 12, 1) 74.75%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e5f30c", endColorstr="#f33d0c",GradientType=1 );
+}
+.search__body--text {
+  padding-bottom: 130px;
+  font-size: 40px;
+  color: aliceblue;
+}
+.search__body--input {
+  padding-bottom: 40px;
+}
+.search__body--input--place {
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 30px 40px;
+}
+.search__body--button {
+  padding-bottom: 20px;
+}
+.search--button {
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 20px 4dvb;
+  font-size: 25px;
+}
+
+/*--------------------------------------------------------*/
+
+.music--player__container {
+}
+.music--player__body {
+  height: 600px;
+  width: 450px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  background: rgba(242, 177, 12, 1);
+  background: -o-linear-gradient(
+    -225deg,
+    rgba(242, 177, 12, 1) 0%,
+    rgba(243, 61, 12, 1) 24.75%,
+    rgba(243, 61, 12, 1) 63.5%,
+    rgba(243, 61, 12, 1) 74.5%,
+    rgba(243, 61, 12, 1) 74.75%
+  );
+  background: -moz-linear-gradient(
+    -225deg,
+    rgba(242, 177, 12, 1) 0%,
+    rgba(243, 61, 12, 1) 24.75%,
+    rgba(243, 61, 12, 1) 63.5%,
+    rgba(243, 61, 12, 1) 74.5%,
+    rgba(243, 61, 12, 1) 74.75%
+  );
+  background: -webkit-linear-gradient(
+    -225deg,
+    rgba(242, 177, 12, 1) 0%,
+    rgba(243, 61, 12, 1) 24.75%,
+    rgba(243, 61, 12, 1) 63.5%,
+    rgba(243, 61, 12, 1) 74.5%,
+    rgba(243, 61, 12, 1) 74.75%
+  );
+  background: linear-gradient(
+    -45deg,
+    rgba(242, 177, 12, 1) 0%,
+    rgba(243, 61, 12, 1) 24.75%,
+    rgba(243, 61, 12, 1) 63.5%,
+    rgba(243, 61, 12, 1) 74.5%,
+    rgba(243, 61, 12, 1) 74.75%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f2b10c", endColorstr="#f33d0c",GradientType=1 );
+}
+.music--player--back--button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.music--player__back {
+  font-size: 30px;
+  background-color: rgb(234, 178, 12);
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: aliceblue;
+}
+.music--player--viewer {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.music--player--img {
+  /* Висота картинки */
+  border-radius: 100%; /* Перетворює картинку на коло */
+  object-fit: cover; /* Забезпечує, щоб картинка заповнювала круг, не деформуючи зображення */
+}
+.music--player--name {
+  padding-top: 20px;
+  font-size: 30px;
+  color: aliceblue;
+}
+.music--player--author {
+  padding-top: 10px;
+  font-size: 20px;
+  color: aliceblue;
+}
+.music--player--buttons {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.music--player--progres {
+  -webkit-appearance: none; /* Вимикає стандартний вигляд слайдера */
+  width: 60%; /* Ширина слайдера */
+  height: 6px; /* Висота слайдера */
+  background-color: rgb(167, 80, 0); /* Колір доріжки */
+  border-radius: 4px; /* Округлені краї доріжки */
+  cursor: pointer; /* Курсор у вигляді руки при наведенні */
+  margin: 40px 0px; /* Відступи з боків */
+}
+
+/* Стилізація для повзунка (thumb) слайдера */
+.music--player--progres::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Вимикає стандартний вигляд повзунка */
+  background-color: aliceblue; /* Колір повзунка */
+  width: 30px; /* Ширина повзунка */
+  height: 30px; /* Висота повзунка */
+  border-radius: 50%; /* Округлені краї повзунка */
+  border: 8px solid rgb(252, 92, 0); /* Обвід навколо повзунка */
+  box-shadow: 0 5px 5px rgb(116, 116, 116); /* Тінь для повзунка */
+  cursor: pointer; /* Курсор у вигляді руки при наведенні */
+}
+
+/* Стилізація для доріжки слайдера (необов'язково) */
